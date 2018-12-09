@@ -1,0 +1,340 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    max-width: 720px;
+}
+
+
+.wrapper{
+   margin:  20px 20px 0 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.card_photo{
+
+    width: 113px;
+    position: relative;
+    height: 54px;
+    margin-left: 22px;
+    border: 1px solid #cecabf;
+    border-right: 1px solid #fffbc8;
+    background-color: #fffbc8;
+    top: 25px;
+    
+}
+
+.card_photo img{
+    position: absolute;
+    bottom: -15px;
+    left: -23px;
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+}
+
+.card_info{
+    width: 90%;
+  
+}
+.card_info h1{
+    color: #333333;
+    font-size: 20px;
+}
+.card_info p{
+    color: #949494;
+    font-size: 12px;
+    margin: 7px 0;
+}
+
+.card_info_about{
+    font-size: 15px;
+    padding: 5px 0;
+    line-height: 1.5;
+    border-left: 1px solid #fffbc8;
+    border-right: 1px solid #cecabf;
+    border-top: 1px solid #cecabf;
+    border-bottom: 1px solid #cecabf;
+    background-color: #fffbc8;
+    border-radius:  0 10px 10px 0;
+    -webkit-border-radius:  0 10px 10px 0;
+	-moz-border-radius:  0 10px 10px 0;
+
+}
+
+
+
+
+
+.scheme_{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: 0;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.row{
+    flex-direction: row;
+    display: flex;
+    margin: 15px;
+    padding-bottom: 15px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: 0;
+    border-bottom: 1px solid #cccccc;
+
+}
+
+.col1{
+    border-left: 1px solid #b2b2b2; 
+}
+.col1, .col3{
+    width: 80%;
+}
+.col1 div, .col2 div, .col4 div{
+    height: 25px;
+    width: 20%;
+    margin: 3px 3px 3px 0;
+    padding-left: 7px;
+    font-size: 14px;
+    
+    
+   
+}
+.col4 div{
+    font-size: 16px;
+}
+.col1 div{
+    display: flex;
+    align-items: center;
+}
+.col2 div, .col4 div, .col3 p{
+    font-weight: bold;
+}
+
+
+.col1 div:first-child, .col2 div:first-child{
+    margin-top: 0;
+
+}
+.col1 div:first-child{
+    background-color: #b1e19b;
+    width: 73.33%;
+    white-space: nowrap;
+}
+
+.col1 div:last-child{
+    background-color: #ace2f8;
+    width: 6.67%;
+}
+
+.col1 div:last-child, .col2 div:last-child{
+    margin-bottom: 0;
+}
+
+
+.col2, .col4{
+    width: 20%;
+}
+
+.col2 div, .col4 div{
+    text-align: right;
+}
+.row_{
+    flex-direction: row;
+    display: flex;
+    margin: 15px;
+    padding-bottom: 15px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.review_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.review_header .descr{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+}
+
+.review_header .more{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+ img{
+    cursor: pointer;
+}
+.more_like{
+    margin-right: 25px;
+}
+.more_com{
+    padding-top: 4px;
+    padding-right: 2px;
+}
+
+.descr{
+    font-size: 16px;
+}
+
+.descr a{
+    margin-left: 15px;
+}
+
+.review_card{
+    margin-top: 15px;
+}
+
+.review_card_about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.review_card_about p{
+    margin-left: 15px;
+    color: #949494;
+    font-size: 12px;
+
+}
+
+.review_card_content{
+    border: 1px solid #cfcfcf;
+    background-color: #f2fbff;
+    width: 100%;
+    padding: 20px ;
+    margin-top: 15px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.review_card_content:before{
+    
+        content: ' '; 
+        position: absolute; 
+        width: 0; 
+        height: 0; 
+        top: -10px;
+        border: 5px solid; 
+        border-color:  transparent transparent  #cfcfcf #cfcfcf; 
+}
+.review_card_content:after { 
+	content: ' '; 
+	position: absolute; 
+    top: -8px;
+    left: 21px;
+    border: 4px solid;
+	border-color:  transparent transparent #f2fbff #f2fbff; 
+}
+
+
+.comment{
+    width: 96%;
+    height: 65px;
+    border: 1px solid #a9a9a9;
+    background-color: #fff;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+ footer{
+    background-color: #f2f2f2;
+    margin-top: 15px;
+    padding: 30px 0 ;
+    
+   
+}
+.submit_comment{
+    display: block;
+    max-width: 280px;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fdd639;
+    color:#484333;
+    height: 43px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #fdd639;
+ 
+} 
+
+.submit_comment:hover{
+    background-color:#484333;
+    color: #fdd639;
+    cursor: pointer;
+    transition: 1s;
+}
+
+h3{
+    font-size: 16px;
+}
+p, .card_info_about, a, .name{
+    font-size: 14px;
+    
+}
+
+@media (max-width: 570px){
+    
+    .card_info p{
+        font-size: 12px;
+        margin: 5px 0;
+    }
+   .card_photo img{
+    
+    width: 100%;
+    height: 100px;
+   }
+   .card_info_about{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border: 1px solid #cecabf;
+    position: relative;
+    right: 20px;
+    padding: 0 20px;
+   }
+   .card_photo{
+       background-color: #fff;
+       border: 1px solid #fff;
+       right: 10px;
+       
+   }
+   
+}
+
